@@ -1,0 +1,59 @@
+/*NavBar*/
+
+.navbar {
+    background-color: #4FC4B9;
+    box-shadow: 3px 5px 11px rgba(0, 0, 0, 0.3);
+}
+
+.navbar-toggler {
+    color: #e8ebea;
+}
+
+.navbar-logo {
+    width: 5rem;
+    height: auto;
+    display: block;
+    object-fit: contain;
+    border-radius: 10rem;
+    margin-right: 1rem;
+}
+
+.nav-item .nav-link {
+    font-weight: bold;
+    color: #e8ebea;
+}
+
+.nav-item .nav-link:hover{
+    font-weight: bold;
+    color: #e8ebea;
+    border-bottom: 0.1rem solid #e8ebea;;
+}
+
+.dropdown-menu {
+    background-color: #4FC4B9;
+}
+
+.dropdown-item {
+    font-weight: bold;
+    color: #e8ebea;
+}
+
+.contact-button {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    border: 0.2rem solid #ffffff;
+    background-color: rgb(37, 211, 102);
+}
+
+.contact-button:hover {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    border: 0.2rem solid #ffffff;
+    background-color: rgb(30, 172, 82);
+}
