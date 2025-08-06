@@ -6,6 +6,7 @@
 .navbar {
     background-color: #4FC4B9;
     box-shadow: 5px 7px 13px rgba(0, 0, 0, 0.3);
+    z-index: 1030;
 }
 
 .navbar-toggler {
@@ -26,10 +27,10 @@
     color: #e8ebea;
 }
 
-.nav-item .nav-link:hover{
+.nav-item .nav-link:hover {
     font-weight: bold;
     color: #e8ebea;
-    border-bottom: 0.1rem solid #e8ebea;;
+    border-bottom: 0.1rem solid #e8ebea;
 }
 
 .dropdown-menu {
@@ -70,16 +71,16 @@
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
-    overflow: hidden; 
+    overflow: hidden;
     box-shadow: 5px 7px 13px rgba(0, 0, 0, 0.3);
 }
 
 .banner::before {
     content: "";
     position: absolute;
-    inset: 0; 
+    inset: 0;
     backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px);
     z-index: 1;
 }
 
@@ -112,12 +113,150 @@
 
 .slogan {
     display: flex;
-    justify-content: center; 
-    align-items: center;   
+    justify-content: center;
+    align-items: center;
     text-align: center;
     height: 40vh;
 }
 
 .card-body {
     padding: 4rem;
+}
+
+/*footer*/
+
+.footer {
+    background-color: #5E4973;
+    color: #e8ebea;
+    margin-top: 2rem;
+    font-weight: bold;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+}
+
+.flex-items:nth-child(1) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+}
+
+.flex-items:nth-child(2) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+}
+
+.flex-items:nth-child(3) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+}
+
+.flex-items:nth-child(2) .social-red {
+    list-style: none;
+    padding-top: 1rem;
+}
+
+.flex-items:nth-child(2) .social-red li a {
+    text-decoration: none;
+    color: #e8ebea;
+}
+
+.flex-items:nth-child(2) .social-red li a:hover {
+    border-bottom: 0.1rem solid #e8ebea;
+}
+
+@media (max-width: 768px) {
+
+    /* --- Banner principal --- */
+    .blur h1 {
+        font-size: 3rem;
+    }
+
+    .blur h3 {
+        font-size: 1.5rem;
+    }
+
+    .blur {
+        padding: 1.5rem;
+        border: 0.5rem solid #e8ebea;
+    }
+
+    /* --- Slogan --- */
+    .slogan {
+        height: auto;
+        padding: 2rem 1rem;
+    }
+
+    .slogan .card {
+        width: 100% !important;
+    }
+
+    /* --- Cards de servicios --- */
+    .cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    .card {
+        width: 90% !important;
+    }
+
+    .card-body {
+        padding: 1.5rem;
+    }
+
+    /* --- Footer --- */
+    .flex-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .flex-items {
+        width: 100%;
+    }
+
+    .flex-items img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* --- Botón de contacto --- */
+    .contact-button {
+        width: 100%;
+        justify-content: center;
+        padding: 0.75rem 1rem;
+        font-size: 1rem;
+    }
+
+    /* --- Navbar --- */
+    .navbar-logo {
+        width: 120px;
+        height: auto;
+    }
+
+    .navbar-nav .nav-link {
+        text-align: center;
+        padding: 0.5rem 0;
+    }
 }
