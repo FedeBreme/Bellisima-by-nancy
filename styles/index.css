@@ -123,6 +123,10 @@
     padding: 4rem;
 }
 
+.card-title {
+    text-align: center;
+}
+
 /*footer*/
 
 .footer {
@@ -180,6 +184,10 @@
 
 .flex-items:nth-child(2) .social-red li a:hover {
     border-bottom: 0.1rem solid #e8ebea;
+}
+
+.imagen {
+    width: 20vh;
 }
 
 @media (max-width: 768px) {

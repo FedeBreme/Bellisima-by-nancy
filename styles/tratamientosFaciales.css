@@ -1,0 +1,139 @@
+/*NavBar*/
+
+.navbar {
+    background-color: #4FC4B9;
+    box-shadow: 5px 7px 13px rgba(0, 0, 0, 0.3);
+    z-index: 1030;
+}
+
+.navbar-toggler {
+    color: #e8ebea;
+}
+
+.navbar-logo {
+    width: 5rem;
+    height: auto;
+    display: block;
+    object-fit: contain;
+    border-radius: 10rem;
+    margin-right: 1rem;
+}
+
+.nav-item .nav-link {
+    font-weight: bold;
+    color: #e8ebea;
+}
+
+.nav-item .nav-link:hover {
+    font-weight: bold;
+    color: #e8ebea;
+    border-bottom: 0.1rem solid #e8ebea;
+}
+
+.dropdown-menu {
+    background-color: #4FC4B9;
+}
+
+.dropdown-item {
+    font-weight: bold;
+    color: #e8ebea;
+}
+
+.contact-button {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    border: 0.2rem solid #ffffff;
+    background-color: rgb(37, 211, 102);
+}
+
+.contact-button:hover {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    border: 0.2rem solid #ffffff;
+    background-color: rgb(30, 172, 82);
+}
+
+/*Contenido*/
+
+.content {
+    text-align: center;
+}
+
+.content h1 {
+    font-size: 4rem;
+}
+
+.card {
+    width: 300px; /* Necesario para que margin funcione */
+    margin: 0 auto;
+    margin-top: 2rem;
+}
+
+/*Footer*/
+
+.footer {
+    background-color: #5E4973;
+    color: #e8ebea;
+    margin-top: 2rem;
+    font-weight: bold;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+}
+
+.flex-items:nth-child(1) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+}
+
+.flex-items:nth-child(2) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+}
+
+.flex-items:nth-child(3) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+}
+
+.flex-items:nth-child(2) .social-red {
+    list-style: none;
+    padding-top: 1rem;
+}
+
+.flex-items:nth-child(2) .social-red li a {
+    text-decoration: none;
+    color: #e8ebea;
+}
+
+.flex-items:nth-child(2) .social-red li a:hover {
+    border-bottom: 0.1rem solid #e8ebea;
+}
+
+.imagen {
+    width: 20vh;
+}
