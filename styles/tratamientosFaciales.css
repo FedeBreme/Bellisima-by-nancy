@@ -66,13 +66,23 @@
 }
 
 .content h1 {
-    font-size: 4rem;
+    margin-top: 2rem;
+    font-size: 3rem;
+}
+
+.content h4 {
+    margin-top: 2rem;
 }
 
 .card {
-    width: 300px; /* Necesario para que margin funcione */
+    width: 300px;
     margin: 0 auto;
     margin-top: 2rem;
+}
+
+.card-body a {
+    text-decoration: none;
+    color: black;
 }
 
 /*Footer*/
