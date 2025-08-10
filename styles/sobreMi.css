@@ -124,6 +124,11 @@
     font-size: 2rem;
 }
 
+.biography img {
+    width: 1000px;
+    height: auto;
+}
+
 /*footer*/
 
 .footer {
@@ -185,4 +190,99 @@
 
 .imagen {
     width: 20vh;
+}
+
+@media (max-width: 768px) {
+
+    /* --- Banner principal --- */
+    .blur h1 {
+        font-size: 3rem;
+    }
+
+    .blur h3 {
+        font-size: 1.5rem;
+    }
+
+    .blur {
+        padding: 1.5rem;
+        border: 0.5rem solid #e8ebea;
+    }
+
+    /* --- Footer --- */
+    .flex-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .flex-items {
+        width: 100%;
+    }
+
+    .flex-items img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* --- Botón de contacto --- */
+    .contact-button {
+        width: 100%;
+        justify-content: center;
+        padding: 0.75rem 1rem;
+        font-size: 1rem;
+    }
+
+    /* --- Navbar --- */
+    .navbar-logo {
+        width: 120px;
+        height: auto;
+    }
+
+    .navbar-nav .nav-link {
+        text-align: center;
+        padding: 0.5rem 0;
+    }
+
+    /* --- baner --- */
+    .banner {
+        height: 60vh;
+    }
+
+    /* --- pick --- */
+    .pick img {
+        width: 250px;
+        height: auto;
+    }
+
+    /* --- biography --- */
+    .biography h1 {
+        font-size: 2.2rem;
+    }
+
+    .biography p {
+        font-size: 1.1rem;
+        padding: 0 1rem;
+    }
+
+    .biography h5 {
+        font-size: 1.5rem;
+    }
+
+    .biography img {
+        width: 100%;
+        max-width: 1000px;
+        height: auto;
+    }
+
+    /* Botón de contacto ancho completo, centrado */
+    .contact-button {
+        width: 100%;
+        justify-content: center;
+        padding: 0.75rem 1rem;
+        font-size: 1rem;
+        display: flex;
+        justify-content: center;
+    }
 }
