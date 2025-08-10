@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
 /*NavBar*/
 
 .navbar {
@@ -63,6 +65,7 @@
 
 .content {
     text-align: center;
+    font-family: "Roboto Condensed"
 }
 
 .content h1 {
@@ -83,6 +86,15 @@
 .card-body a {
     text-decoration: none;
     color: black;
+}
+
+.button {
+    background-color: #4FC4B9;
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: #32998f;
 }
 
 /*Footer*/
@@ -146,4 +158,59 @@
 
 .imagen {
     width: 20vh;
+}
+
+@media (max-width: 768px) {
+
+    /* --- Cards de servicios --- */
+    .cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    .card {
+        width: 90% !important;
+    }
+
+    .card-body {
+        padding: 1.5rem;
+    }
+
+    /* --- Footer --- */
+    .flex-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .flex-items {
+        width: 100%;
+    }
+
+    .flex-items img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* --- Botón de contacto --- */
+    .contact-button {
+        width: 100%;
+        justify-content: center;
+        padding: 0.75rem 1rem;
+        font-size: 1rem;
+    }
+
+    /* --- Navbar --- */
+    .navbar-logo {
+        width: 120px;
+        height: auto;
+    }
+
+    .navbar-nav .nav-link {
+        text-align: center;
+        padding: 0.5rem 0;
+    }
 }
