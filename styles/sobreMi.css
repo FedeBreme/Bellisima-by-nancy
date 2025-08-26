@@ -78,24 +78,23 @@
     content: "";
     position: absolute;
     inset: 0;
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
     z-index: 1;
 }
 
 .pick {
-    position: relative;
+    position: absolute;
+    top: 5rem;        
+    left: 3rem;
     z-index: 2;
     backdrop-filter: none !important;
     -webkit-backdrop-filter: none !important;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    padding: 1rem; 
+    
 }
 
 .pick img {
     border-radius: 500rem;
+    box-shadow: 7px 9px 15px rgba(0, 0, 0, 0.3);
 }
 
 /*biography*/
@@ -193,20 +192,6 @@
 }
 
 @media (max-width: 768px) {
-
-    /* --- Banner principal --- */
-    .blur h1 {
-        font-size: 3rem;
-    }
-
-    .blur h3 {
-        font-size: 1.5rem;
-    }
-
-    .blur {
-        padding: 1.5rem;
-        border: 0.5rem solid #e8ebea;
-    }
 
     /* --- Footer --- */
     .flex-container {

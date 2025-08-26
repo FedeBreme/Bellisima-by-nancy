@@ -80,53 +80,59 @@
     content: "";
     position: absolute;
     inset: 0;
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
     z-index: 1;
 }
 
-.blur {
+.tittle {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 5rem;
+    left: 3rem;
     text-align: center;
     z-index: 2;
-    border: 1rem solid #e8ebea;
     padding: 3rem;
-    backdrop-filter: blur(40px);
-    color: #e8ebea;
+    color: black;
+    text-shadow: 1px 1px 6px #e8ebea;
 }
 
-.blur h1 {
-    font-size: 8rem;
+.tittle h1 {
+    font-size: 7rem;
     text-decoration: underline;
     font-family: "Oswald";
 }
 
-.blur h3 {
-    font-size: 4rem;
+.tittle h3 {
+    font-size: 3.5rem;
     padding-top: 2rem;
     font-family: "Cedarville Cursive";
 }
 
-/*Slogan*/
+/*Content*/
 
-.slogan {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.content {
+    margin-top: 2.8rem;
+    font-family: "Roboto Condensed";
+}
+
+.content-text {
     text-align: center;
-    height: 40vh;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-left: 10rem;
+    padding-right: 10rem;
+}
+
+.card {
+    margin-top: 2rem;
 }
 
 .card-body {
     padding: 4rem;
-    font-family: "Roboto Condensed"
+    text-align: center;
 }
 
 .card-title {
     text-align: center;
+    font-weight: bold;
 }
 
 /*footer*/
@@ -195,27 +201,35 @@
 @media (max-width: 768px) {
 
     /* --- Banner principal --- */
-    .blur h1 {
+    .tittle {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: #000;
+    }
+
+    .tittle h1 {
         font-size: 3rem;
+        font-weight: bold;
+        margin: 0;
     }
 
-    .blur h3 {
-        font-size: 1.5rem;
+    .tittle h3 {
+        font-size: 1.7rem;
     }
 
-    .blur {
-        padding: 1.5rem;
-        border: 0.5rem solid #e8ebea;
+    /* --- baner --- */
+    .banner {
+        height: 60vh;
     }
 
-    /* --- Slogan --- */
-    .slogan {
-        height: auto;
-        padding: 2rem 1rem;
-    }
-
-    .slogan .card {
-        width: 100% !important;
+    /* --- content --- */
+    .content-text {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        font-size: 1.2rem;
     }
 
     /* --- Cards de servicios --- */
